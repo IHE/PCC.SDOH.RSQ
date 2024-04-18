@@ -2,11 +2,11 @@
 # ───────────────────────────────────────────────────
 # the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
-id: ihe.domain.profile
-canonical: https://profiles.ihe.net/Domain/Profile
+id: ihe.pcc.rsq
+canonical: https://profiles.ihe.net/PCC/ReferralStatus
 version: 0.0.1-current
-name: IHE_Domain_Profile
-title: "spelled out name of the IHE Profile"
+name: IHE_PCC_Referral_Status_Query
+title: "IHE PCC Referral Status Query"
 description: put the short description of the profile here. it should explain what problem is being solved
 releaseLabel: ci-build
 #releaseLabel: ballot
@@ -16,19 +16,19 @@ releaseLabel: ci-build
 status: draft
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
-  - name: IHE IT Infrastructure Technical Committee
-  - url: https://www.ihe.net/ihe_domains/it_infrastructure/
-  - email: iti@ihe.net
+  - name: IHE Patient Care Coordination Technical Committee
+  - url: https://www.ihe.net/ihe_domains/patient_care_coordination/
+  - email: pcc@ihe.net
 contact:
-  - name: IHE IT Infrastructure Technical Committee
+  - name: IHE Patient Care Coordination Technical Committee
     telecom:
       - system: email
-        value: iti@ihe.net
+        value: pcc@ihe.net
 license:  CC-BY-4.0
 fhirVersion: 4.0.1
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 #copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
-copyrightYear: 2021+
+copyrightYear: 2024+
 
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -57,16 +57,13 @@ resources:
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
   index.md:
-    title: ToDo Home
+    title: SDOH Referral Status Home
     generation: markdown
   volume-1.md:
-    title: 1:XX ToDo Volume 1
+    title: 1:XX Referral Status Query Volume 1
     generation: markdown
-  domain-YY.md:
-    title: 2:3.YY Transaction one [Domain-YY]
-    generation: markdown
-  domain-ZZ.md:
-    title: 3:?.ZZ Content one [Domain-ZZ]
+  pcc-Y6.md:
+    title: 2:3.Y6 Retrieve Referral Status [PCC-Y6]
     generation: markdown
   testplan.md:
     title: "Test Plan"
@@ -92,9 +89,7 @@ menu:
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
   Volume 2:
-    "Transaction one [Domain-YY]": domain-YY.html
-  Volume 3:
-    "Content one [Domain-ZZ]": domain-ZZ.html
+    "Retrieve Referral Status [PCC-Y6]": pcc-Y6.html
   Artifacts: artifacts.html
   Other:
     Test Plan: testplan.html
