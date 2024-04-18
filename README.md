@@ -1,5 +1,4 @@
 # Status
-This is the supplement template for IHE-Profiles using the IG publisher. repository is under-construction. Please try using it. If you have questions, contact John Moehrke. 
+This is the source for the [CI build](https://build.fhir.org/ig/IHE/PCC.SDOH.RSQ/) of the IHE PCC Referral Status Request profile. 
 
-Instructions [are found here](https://github.com/IHE/supplement-template/wiki/Getting-Started)
 
