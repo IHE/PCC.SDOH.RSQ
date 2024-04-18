@@ -1,5 +1,5 @@
 
-The purpose of the SDOH Referral Status Query is to provide a mechanism to obtain information about the state of any SDOH services for which there is an existing accepted referral. 
+The purpose of the SDOH Referral Status Query is to provide a mechanism to obtain information about the state of any SDOH services for which there is an existing accepted referral. The varied nature of SDOH referrals and the decentralized approaches that are common in community-based services bring out the need for healthcare providers to be able to get an up-to-date status of any social care a patient may be receiving.
 
 
 <div markdown="1" class="stu-note">
@@ -21,7 +21,6 @@ This guide is organized into the following sections:
    1. [Overview](volume-1.html#overview)
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
-   1. **TODO: point to the Volume 1 Appendix if there is one**
 2. Volume 2: Transaction Detail
    1. [ToDo do \[PCC-Y6\]](pcc-Y6.html)
    1. **TODO: point to the Volume 2 Appendix if there is one**
