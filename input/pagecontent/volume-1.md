@@ -7,31 +7,21 @@
 
 <a name="actors-and-transactions"> </a>
 
-## 1:X.1 ToDo Actors, Transactions, and Content Modules
+## 1:X.1 SDOH Referral Status Query Actors, Transactions, and Content Modules
+
+The following actors and transactions are defined in this implementation guide:
 
 * Actors
-  * [Client](#client)
-  * [Server](#server)
+  * [Referral Status Consumer](#client)
+  * [Referral Status Provider](#server)
 * Transactions
-  * [do domain-Y](domain-YY.html)
+  * [Retrieve SDOH Referral Status PCC-Y6](pcc-Y6.html)
 
-Actors and transactions are used to achieve this use-case...
-
-<figure>
-{%include usecase1-processflow.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Figure X.X.X.X-X: Use Case 1 Process Flow</p>
-</figure>
-<br clear="all">
-
-This section defines the actors and transactions in this implementation guide.
-
-Figure below shows the actors directly
-involved in the ToDo 
-Profile and the relevant transactions between them.
+The figure below shows the actors directly involved in the SDOH Referral Status Query Profile and the relevant transactions between them.
 
 <figure>
 {%include ActorsAndTransactions.svg%}
-<figcaption><b>Figure XX.1-2: ToDo Actor Diagram</b></figcaption>
+<figcaption><b>Figure XX.1-1: SDOH Referral Status Query Actor Diagram</b></figcaption>
 </figure>
 <br clear="all">
 
@@ -388,7 +378,15 @@ short list of the use cases described below and explain why they are
 different.
 
 ### XX.4.2 Use Cases
+Actors and transactions are used to achieve this use-case...
 
+<figure>
+{%include usecase1-processflow.svg%}
+<p id="fX.X.X.X-X" class="figureTitle">Figure X.X.X.X-X: Use Case 1 Process Flow</p>
+</figure>
+<br clear="all">
+
+This section defines the actors and transactions in this implementation guide.
 #### XX.4.2.1 Use Case \#1: simple name
 
 One or two sentence simple description of this particular use

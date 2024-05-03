@@ -1,6 +1,5 @@
-@startuml
-skinparam svgDimensionStyle false
-agent "[[#client Client]]" as Client
-agent "[[#server Server]]" as Server
-Client -down-> Server : "go [[domain-YY.html Domain-YY]]"
+@startuml ActorsAndTransactions
+agent "[[#client Referral Status Consumer]]" as Client
+agent "[[#server Referral Status Provider]]" as Server
+Client -down-> Server : "Retrieve SDOH Referral Status [[pcc-Y6.html PCC-Y6]]"
 @enduml

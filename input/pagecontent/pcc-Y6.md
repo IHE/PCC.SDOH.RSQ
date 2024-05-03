@@ -1,8 +1,8 @@
-This section corresponds to transaction [ITI-Y] of the IHE Technical Framework. Transaction [ITI-Y] is used by the Client and Server Actors. The go [ITI-Y] transaction is used to query and get back results.
+This section corresponds to transaction [PCC-Y6] of the IHE Technical Framework. Transaction [PCC-Y6] is used by the Client and Server Actors. The go [PCC-Y6] transaction is used to query and get back results.
 
 ### Scope
 
-The Client [ITI-Y] transaction passes a go Request from a Client to a Server.
+The Client [PCC-Y6] transaction passes a go Request from a Client to a Server.
 
 ### Actors Roles
 
