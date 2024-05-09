@@ -1,20 +1,30 @@
-Instance: IHE.ToDo.client
+Instance: IHE.SDOH-RSQ.client
 InstanceOf: CapabilityStatement
-Title: "ToDo Actor"
+Title: "SDOH Referral Status Query Client"
 Usage: #definition
 * description = """
-CapabilityStatement for Client Actor 
+CapabilityStatement for SDOH Referral Status Query Actor 
 
-Explain
-- blah
-- blah
+The client obtains the status of an exisitng SDOH Referral by querying the service provider based on the referral identifier
+- point 1
+- point 2
 """
-* url = "https://profiles.ihe.net/Domain/Profile/CapabilityStatement/IHE.ToDo.client"
-* name = "IHE_ToDo_client"
-* title = "IHE ToDo client"
+* url = "https://profiles.ihe.net/PCC/SDOH-RSQ/CapabilityStatement/IHE.SDOH-RSQ.client"
+* name = "IHE_Referral_Status_Query_client"
+* title = "IHE Referral Status Query client"
 * status = #active
 * experimental = false
 * date = "2022-10-27"
+* publisher = "Integrating the Healthcare Enterprise (IHE)"
+* contact[0].name = "IHE"
+* contact[=].telecom.system = #url
+* contact[=].telecom.value = "http://ihe.net"
+* contact[+].name = "Patient Care Coordination Domain"
+* contact[=].telecom.system = #email
+* contact[=].telecom.value = "pcc@ihe.net"
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+* description = "CapabilityStatement for Client Actor in the IHE IT Infrastructure Technical Framework Supplement IHE FHIR Scheduling. See https://profiles.ihe.net/ITI/TF/Volume1/ch-38.html. The IHE Profile text is Normative, this conformance resource is Informative."
+* copyright = "IHE http://www.ihe.net/Governance/#Intellectual_Property"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #application/fhir+xml
