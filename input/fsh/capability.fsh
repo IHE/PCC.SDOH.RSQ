@@ -112,7 +112,7 @@ Explain
 - blah
 - blah
 """
-* url = "https://profiles.ihe.net/Domain/Profile/CapabilityStatement/IHE.ToDo.server"
+* url = "https://profiles.ihe.net/PCC/SDOH-RSQ/CapabilityStatement/IHE.SDOH-RSQ.serever"
 * name = "IHE_ToDo_supplier"
 * title = "IHE ToDo Server"
 * status = #active

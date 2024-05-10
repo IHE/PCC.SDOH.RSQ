@@ -1,5 +1,5 @@
 
-# 1:XX Profile name
+# 1:X SDOH Referral Status Query
 
 **TODO: Provide an end-user friendly overview of what the profile does for them. Keep it brief (a paragraph or two, up to a page). If extensive detail is needed, it should be included in Section XX.4- Use Cases.**
 
@@ -21,25 +21,16 @@ The figure below shows the actors directly involved in the SDOH Referral Status 
 
 <figure>
 {%include ActorsAndTransactions.svg%}
-<figcaption><b>Figure XX.1-1: SDOH Referral Status Query Actor Diagram</b></figcaption>
+<figcaption><b>Figure X.1-1: SDOH Referral Status Query Actor Diagram</b></figcaption>
 </figure>
 <br clear="all">
 
-<p id ="tXX.1-1" class="tableTitle">Table XX.1-1: Profile Acronym Profile - Actors and Transactions</p>
+<p id ="tX.1-1" class="tableTitle">Table X.1-1: SDOH-RSQ Profile - Actors and Transactions</p>
 
-|         |               |                        |                 |                                   |
+| Actors | Transactions | Initiator or Responder | Optionality | Reference |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
-| Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
-| Actor A | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-|         | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-| Actor F | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-|         | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-| Actor D | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-| Actor E | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-|         | Transaction 3 |                        | O ( See Note 1) | Domain Acronym TF-2: 3.Y3 |
-|         | Transaction 4 |                        | O ( See Note 1) | Domain Acronym TF-2: 3.Y4 |
-| Actor B | Transaction 3 |                        | R               | Domain Acronym TF-2: 3.Y3 |
-|         | Transaction 4 |                        | O ( See Note 2) | Domain Acronym TF-2: 3.Y4 |
+| Referral Status Consumer | Retrieve SDOH Referral Status | Initiator | R  | PCC TF-2: 3.Y6 |
+| Referral Status Provider | Retrieve SDOH Referral Status | Responder | R  | PCC TF-2: 3.Y6 |
 {: .grid}
 
 Note 1: *For example, a note could specify that at least one of the
@@ -55,29 +46,29 @@ The actors in this profile are described in more detail in the sections below.
 
 <a name="client"> </a>
 
-#### XX.1.1.1 Client
+#### XX.1.1.1 Referral Status Consumer
 
 The Client queries for blah meeting certain criteria and may retrieve selected blah.
 
-FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
+FHIR Capability Statement for [Client](CapabilityStatement-IHE.SDOH-RSQ.client.html)
 
 <a name="server"> </a>
 
-#### XX.1.1.2 Server
+#### XX.1.1.2 Referral Status Provider
 
 The Sever processes query request from the Client actor.
 
-FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+FHIR Capability Statement for [Server](CapabilityStatement-IHE.SDOH-RSQ.server.html)
 
 ### Transaction Descriptions
 
 The transactions in this profile are summarized in the sections below.
 
-#### ToDo do transaction
+#### Retrieve SDOH Referral Status transaction
 
 This transaction is used to **do things**
 
-For more details see the detailed [transaction description](domain-YY.html)
+For more details see the detailed [transaction description](PCC-Y6.html)
 
 <a name="actor-options"> </a>
 

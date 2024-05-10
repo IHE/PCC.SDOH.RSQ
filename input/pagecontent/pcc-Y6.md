@@ -10,8 +10,8 @@ The Client [PCC-Y6] transaction passes a go Request from a Client to a Server.
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Client](volume-1.html#client)    | Sends query to Server |
-| [Server](volume-1.html#server) | Receives the query and responds |
+| [Referral Status Consumer](volume-1.html#client)    | Sends query to Server |
+| [Referral Status Provider](volume-1.html#server) | Receives the query and responds |
 
 ### Referenced Standards
 

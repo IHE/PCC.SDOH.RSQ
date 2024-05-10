@@ -22,7 +22,7 @@ This guide is organized into the following sections:
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
 2. Volume 2: Transaction Detail
-   1. [ToDo do \[PCC-Y6\]](pcc-Y6.html)
+   1. [Retrieve SDOH Referral Status \[PCC-Y6\]](pcc-Y6.html)
    1. **TODO: point to the Volume 2 Appendix if there is one**
 3. Volume 4: National Extensions
    1. **TODO: point at the National Extensions if there are any**
