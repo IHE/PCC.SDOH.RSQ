@@ -1,4 +1,4 @@
-This section corresponds to transaction [PCC-Y6] of the IHE Technical Framework. Transaction [PCC-Y6] is used by the Client and Server Actors. The go [PCC-Y6] transaction is used to query and get back results.
+This section corresponds to transaction [PCC-Y6] of the IHE Technical Framework. Transaction [PCC-Y6] is used by the Referral Status Query Client and Referral Status Query Server Actors. The Retrieve SDOH Referral Status [PCC-Y6] transaction is used to query and get back results.
 
 ### Scope
 
