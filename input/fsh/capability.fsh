@@ -67,7 +67,7 @@ Using FHIR search on the `ServiceRequest` resource as part of transaction [PCC-Y
       * valueCode = #SHALL
     * type = #Task
     * documentation = """
-Using FHIR search on the `Task` resource as part of transaction [PCC-Y6] alllows to find out the status of an existing referral.
+Using FHIR search on the `Task` resource as part of transaction [PCC-Y6] allows to find out the status of an existing referral.
 """
     * interaction[+].code = #read
     * interaction[+].code = #search-type
@@ -94,11 +94,11 @@ InstanceOf: CapabilityStatement
 Title: "SDOH Referral Status Query Server"
 Usage: #definition
 * description = """
-CapabilityStatement for the SDOH Referral Status Server Actor.
+CapabilityStatement for the Referral Status Provide Actor in the Patient Care Coordination Technical Framework Supplement PCC SDOH Referral Status Query. See https://profiles.ihe.net/PCC/TF/Volume1/ch-38.html. The IHE Profile text is Normative, this conformance resource is Informative. 
 
-Explain
-- blah
-- blah
+The Provider delivers the status of an existing SDOH Referral by responding  to the query from the SDOH Referral Status Consumer based on the referral identifier.
+- The referral workflow and the various mechanisms on how the referral identifier is known to the consumer and the provider are out of scope.
+- The Provider shall support both entry points for the FHIR search,  a `ServiceRequest` or a `Task` resource.
 """
 * url = "https://profiles.ihe.net/PCC/SDOH-RSQ/CapabilityStatement/IHE.SDOH-RSQ.serever"
 * name = "IHE_Referral_Status_Query_server"
@@ -150,7 +150,7 @@ Using FHIR search on the `ServiceRequest` resource as part of transaction [PCC-Y
       * valueCode = #SHALL
     * type = #Task
     * documentation = """
-Using FHIR search on the `Task` resource as part of transaction [PCC-Y6] alllows to find out the status of an existing referral.
+Using FHIR search on the `Task` resource as part of transaction [PCC-Y6] allows to find out the status of an existing referral.
 """
     * interaction[+].code = #read
     * interaction[+].code = #search-type
