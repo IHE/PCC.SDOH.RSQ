@@ -1,0 +1,11 @@
+@startuml
+hide footbox
+participant "Consumer" as Client
+participant "Provider" as Server
+activate "Client"
+activate "Server"
+"Client" -> "Server" : 1. SDOH Referral Status Query [PCC-Y6]
+"Server" --> "Client" : 2. SDOH Referral Status Query Response [PCC-Y6]
+deactivate "Client"
+deactivate "Server"
+@enduml

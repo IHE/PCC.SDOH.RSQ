@@ -101,8 +101,8 @@ The Provider delivers the status of an existing SDOH Referral by responding  to 
 - The Provider shall support both entry points for the FHIR search,  a `ServiceRequest` or a `Task` resource.
 """
 * url = "https://profiles.ihe.net/PCC/SDOH-RSQ/CapabilityStatement/IHE.SDOH-RSQ.serever"
-* name = "IHE_Referral_Status_Query_server"
-* title = "IHE Referral Status Query server"
+* name = "IHE_Referral_Status_Provider"
+* title = "IHE Referral Status Provider"
 * status = #active
 * experimental = false
 * date = "2024-06-14"
