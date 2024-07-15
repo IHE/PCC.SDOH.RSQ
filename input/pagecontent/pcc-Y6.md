@@ -1,4 +1,4 @@
-This section corresponds to transaction [PCC-Y6] of the IHE Technical Framework. Transaction [PCC-Y6] is used by the Client and Server Actors. The go [PCC-Y6] transaction is used to query and get back results.
+This section corresponds to transaction [PCC-Y6] of the IHE Technical Framework. Transaction [PCC-Y6] is used by the Referral Status Query Client and Referral Status Query Server Actors. The Retrieve SDOH Referral Status [PCC-Y6] transaction is used to query and get back results.
 
 ### Scope
 
@@ -10,7 +10,7 @@ The Client [PCC-Y6] transaction passes a go Request from a Client to a Server.
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Referral Status Consumer](volume-1.html#client)    | Sends query to Server |
+| [Referral Status Consumer](volume-1.html#client)    | Sends query to Provider |
 | [Referral Status Provider](volume-1.html#server) | Receives the query and responds |
 
 ### Referenced Standards
@@ -20,22 +20,22 @@ The Client [PCC-Y6] transaction passes a go Request from a Client to a Server.
 ### Interactions
 
 <figure>
-{%include domain-Y-seq.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Figure X.X.X.X-X: Go Interactions</p>
+{%include pcc-Y6-seq.svg%}
+<p id="fX.X.X.X-1" class="figureTitle">Figure X.X.X.X-1: SDOH Referral Status Query Interactions</p>
 </figure>
 <br clear="all">
 
-#### go Query Message
+#### SDOH Referral Status Query
 
-This message uses the HTTP GET method on the target Server endpoint to convey the query parameters FHIR query.
+This interaction uses the [FHIR Search mechanism](https://hl7.org/FHIR/R4/search.html) to obtain the current status of an existing referral, based on the referral identifier.
 
 ##### Trigger Events
 
-''TODO: define the triggers''
+The Consumer system or user is authorized to query for the status of an existing SDOH referral, and based on user action or a business rule within the system, it sends are query to the Referral Status Provider.
 
-##### Message Semantics
+##### Query Semantics
 
-''TODO: define the message -- usually with a StructureDefintion''
+The query is a [FHIR search](https://hl7.org/FHIR/R4/search.html) against either a `Task` or `ServiceRequest` resource. The formal list of parameters is describer the SDOH Referral Status Consumer [CapabilityStatement definition](CapabilityStatement-IHE.SDOH-RSQ.client.html).
 
 ##### Expected Actions
 
