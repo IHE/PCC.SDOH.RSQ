@@ -1,9 +1,9 @@
 
 # 1:X SDOH Referral Status Query
 
-**TODO: Provide an end-user friendly overview of what the profile does for them. Keep it brief (a paragraph or two, up to a page). If extensive detail is needed, it should be included in Section XX.4- Use Cases.**
+The Social Determinants of Health Referral Status Query (SDOH.RSQ) allows a query consumer with the appropriate permission and in the appropriate context to obtain information about an existing SDOH referral.
 
-**TODO: Explicitly state whether this is a Workflow, Transport, or Content Module (or combination) profile. See the IHE Technical Frameworks General Introduction for definitions of these profile types. The IHE Technical Frameworks [General Introduction](https://profiles.ihe.net/GeneralIntro/). **
+This is a workflow profile using core FHIR resources. Different jurisdictions may choose to define constrained data models to represent the relevant information (e.g. Gravity FHIR profiles for uae in the US).
 
 <a name="actors-and-transactions"> </a>
 
@@ -41,12 +41,12 @@ implemented for Actor E.*
 Note 2: *For example, could specify that Transaction Y4 is required
 if Actor B supports XYZ Option, see Section XX.3.X.*
 
-### XX.1.1 Actors
+### X.1.1 Actors
 The actors in this profile are described in more detail in the sections below.
 
 <a name="client"> </a>
 
-#### XX.1.1.1 Referral Status Consumer
+#### X.1.1.1 Referral Status Consumer
 
 The Client queries for blah meeting certain criteria and may retrieve selected blah.
 
@@ -54,17 +54,17 @@ FHIR Capability Statement for [Client](CapabilityStatement-IHE.SDOH-RSQ.client.h
 
 <a name="server"> </a>
 
-#### XX.1.1.2 Referral Status Provider
+#### X.1.1.2 Referral Status Provider
 
 The Sever processes query request from the Client actor.
 
 FHIR Capability Statement for [Server](CapabilityStatement-IHE.SDOH-RSQ.server.html)
 
-### Transaction Descriptions
+### X.1.2 Transaction Descriptions
 
 The transactions in this profile are summarized in the sections below.
 
-#### Retrieve SDOH Referral Status transaction
+#### X.1.2.1 Retrieve SDOH Referral Status transaction
 
 This transaction is used to **do things**
 
@@ -72,12 +72,12 @@ For more details see the detailed [transaction description](PCC-Y6.html)
 
 <a name="actor-options"> </a>
 
-## XX.2 ToDo Actor Options
+## X.2 ToDo Actor Options
 
 Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
 between options when applicable are specified in notes.
 
-<p id ="tXX.1-1" class="tableTitle">Table XX.1-1: Actor Options</p>
+<p id ="tX.1-2" class="tableTitle">Table XX.1-1: Actor Options</p>
 
 |         |             |
 |---------|-------------|
@@ -86,13 +86,13 @@ between options when applicable are specified in notes.
 | Actor B | none |
 {: .grid}
 
-### XX.2.1 AB Option
+### X.2.1 AB Option
 
 **TODO: describe this option and the Volume 1 requirements for this option
 
 <a name="required-groupings"> </a>
 
-## XX.3 ToDo Required Actor Groupings
+## X.3 ToDo Required Actor Groupings
 
 *Describe any requirements for actors in this profile to be grouped
 with other actors.*
@@ -161,7 +161,7 @@ the required grouping for security. Also see the ITI document titled
 <http://ihe.net/Technical_Frameworks/#IT> for a list of suggested IT and
 security groupings.
 
-<p id ="tXX.3-1" class="tableTitle">Table XX.3-1: Actor Groupings</p>
+<p id ="tX.3-1" class="tableTitle">Table X.3-1: Actor Groupings</p>
 
 <table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
 <thead>
@@ -349,7 +349,7 @@ Guidance on using the “Grouping Condition” column:
 
 <a name="overview"> </a>
 
-## XX.4 ToDo Overview
+## X.4 SDOH-RSQ Overview
 
 This section shows how the transactions/content modules of the profile
 are combined to address the use cases.
@@ -357,7 +357,7 @@ are combined to address the use cases.
 Use cases are informative, not normative, and “SHALL” language is
 not allowed in use cases.
 
-### XX.4.1 Concepts
+### X.4.1 Concepts
 
 If needed, this section provides an overview of the concepts that
 provide necessary background for understanding the profile. If not
@@ -368,25 +368,20 @@ It may be useful in this section but is not necessary, to provide a
 short list of the use cases described below and explain why they are
 different.
 
-### XX.4.2 Use Cases
+### X.4.2 Use Cases
 Actors and transactions are used to achieve this use-case...
 
 <figure>
 {%include usecase1-processflow.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Figure X.X.X.X-X: Use Case 1 Process Flow</p>
+<p id="fX.4.2-1" class="figureTitle">Figure X.4.2-1: Use Case 1 Process Flow</p>
 </figure>
 <br clear="all">
 
 This section defines the actors and transactions in this implementation guide.
-#### XX.4.2.1 Use Case \#1: simple name
+#### XX.4.2.1 Use Case \#1: Previously Ordered Referral
+There are many cases where an SDOH referral is ordered by a healthcare provider, however that Referral Initiator is usually not in a position to follow-up on the outcome, or the lack thereof, of the referral. In such cases getting continuous updates from the Referral Recipient on the changes to the status of the referral is counter-productive. If in the span of weeks or months the patient is again to be seen by the provider, they now can find out the status of the referral before they see the patient again.
 
-One or two sentence simple description of this particular use
-case.
-
-Note that Section XX.4.2.1 repeats in its entirety for additional use
-cases (replicate as Section XX.4.2.2, XX.4.2.3, etc.).
-
-##### XX.4.2.1.1 simple name Use Case Description
+##### XX.4.2.1.1 Previously Ordered Referral Use Case Description
 
 Describe the key use cases addressed by the profile. Limit to a
 maximum of one page of text or consider an appendix.
@@ -415,7 +410,7 @@ Modify the following “Swimlane Diagram”.
 
 <figure>
 {%include usecase1-processflow.svg%}
-<figcaption><b>Figure XX.4.2.2-1: Basic Process Flow in Profile Acronym Profile</b></figcaption>
+<figcaption><b>Figure X.4.2.2-1: Basic Process Flow in Profile Acronym Profile</b></figcaption>
 </figure>
 <br clear="all">
 
