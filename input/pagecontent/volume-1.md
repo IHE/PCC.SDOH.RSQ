@@ -359,34 +359,29 @@ not allowed in use cases.
 
 ### X.4.1 Concepts
 
-If needed, this section provides an overview of the concepts that
-provide necessary background for understanding the profile. If not
-needed, state “Not applicable.” For an example of why/how this section
-may be needed, please see ITI Cross Enterprise Workflow (XDW).
+Referrals for extra-clinical social services (SDOH referrals) are frequently loosely coupled with the provision of those services. Social determinants of health are relevant in many settings, and there are many different scenarios when the status of services received by patients are relevant. This profile addresses the cases where the query consumer is a healthcare provider or a community services provider (including ancillary providers and social care workers), who is aware of an existing SDOH referral. The two use cases described are: 
+* query by the referral initiator
+* query by a non-referring provider
 
-It may be useful in this section but is not necessary, to provide a
-short list of the use cases described below and explain why they are
-different.
+In the first use case, the method of managing the referral workflow is out of scope for this profile. One possible way to manage SDOH referrals is the IHE PCC 360X-SD profile.
+
+In the second use case, the method of learning about an existing SDOH referral is out of scope for this profile.
+
 
 ### X.4.2 Use Cases
-Actors and transactions are used to achieve this use-case...
 
-<figure>
-{%include usecase1-processflow.svg%}
-<p id="fX.4.2-1" class="figureTitle">Figure X.4.2-1: Use Case 1 Process Flow</p>
-</figure>
-<br clear="all">
+#### X.4.2.1 Use Case \#1: Previously Ordered Referral
+There are many cases where an SDOH referral is ordered by a healthcare provider, however that Referral Initiator is usually not in a position to follow-up on the outcome, or the lack thereof, of the referral. In such cases getting continuous updates from the Referral Recipient on the changes to the status of the referral can be considered counter-productive. If in the span of weeks or months the patient is again to be seen by the provider, they now can find out the status of the referral before they see the patient again.
 
-This section defines the actors and transactions in this implementation guide.
-#### XX.4.2.1 Use Case \#1: Previously Ordered Referral
-There are many cases where an SDOH referral is ordered by a healthcare provider, however that Referral Initiator is usually not in a position to follow-up on the outcome, or the lack thereof, of the referral. In such cases getting continuous updates from the Referral Recipient on the changes to the status of the referral is counter-productive. If in the span of weeks or months the patient is again to be seen by the provider, they now can find out the status of the referral before they see the patient again.
+##### X.4.2.1.1 Previously Ordered Referral Use Case Description
 
-##### XX.4.2.1.1 Previously Ordered Referral Use Case Description
+Dr. Urquell is an urgent care provider at the Pleasant View Clinic. Ms. Preston presents at the clinic with a strong pain in the ankle, fearing that it might be broken. Dr. Urquell determines that Ms. Preston has an ankle sprain, stabilizes the joint, prescribes painkillers, and provides her with crutches. During the discussion with the patient, the provider determines that she is about to be evicted, and has no existing housing options. The Pleasant View Clinic has an electronic referral mechanism with a local SDOH hub, Path Forward, which is capable of further evaluating and guiding the patient to services that can help with the social care needs.
 
-Describe the key use cases addressed by the profile. Limit to a
-maximum of one page of text or consider an appendix.
+Once the referral is made, the Path Forward organization will contact their new customer and arrange for a visit by a social worker to help with evaluating her needs. The information about the visit is the only communication from Path Forward to the Pleasant View CLinic, as this is considered closing the loop on the referral since Ms. Preston is not a patient of the clinic any more.
 
-##### XX.4.2.1.2 simple name Process Flow
+Six weeks later, Ms. Preston presents again to the urgent care department of the Pleasant View Clinic with sharp pain in her right wrist. As part of of the check-in process the clinic's system recognizes that there was a recent referral to the Path Forward hub, and issues a query for the status of the referral. The response to the query informs the provider that Ms. Preston has been enrolled in a housing assistance program, and in an employment assistant program. With that knowledge, Dr. Urquell asks the patient about the type of employee assistance she is receiving and learns that she is taking classes on mastering basic computer use, including keyboarding and word processing. Examination of the patient suggests that the wrist pain is likely caused by non-ergonomic keyboard use, but that it is not carpal-tunnel syndrome. 
+
+##### X.4.2.1.2 Previously Ordered Referral Process Flow
 
 Diagram and describe the process flow(s) covered by this profile in
 order to satisfy the use cases. Demonstrate how the profile transactions
