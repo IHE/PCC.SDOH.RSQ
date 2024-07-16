@@ -72,25 +72,9 @@ For more details see the detailed [transaction description](PCC-Y6.html)
 
 <a name="actor-options"> </a>
 
-## X.2 ToDo Actor Options
+## X.2 Referral Status Query Actor Options
 
-Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
-between options when applicable are specified in notes.
-
-<p id ="tX.1-2" class="tableTitle">Table XX.1-1: Actor Options</p>
-
-|         |             |
-|---------|-------------|
-| Actor   | Option Name |
-| Actor A | Option AB  |
-| Actor B | none |
-{: .grid}
-
-### X.2.1 AB Option
-
-**TODO: describe this option and the Volume 1 requirements for this option
-
-<a name="required-groupings"> </a>
+There are no options for the actors involved in this transaction.
 
 ## X.3 ToDo Required Actor Groupings
 
